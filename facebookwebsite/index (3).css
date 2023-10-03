@@ -1,0 +1,580 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+html{
+   
+    font-size: 62.5%;
+    scroll-behavior:smooth ;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
+body,html{
+    overflow-x: hidden;
+}
+body{
+    background-color: #141313;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.7rem #1d1e1f,
+                -0.1rem 0rem 0.1rem;
+                font-family: sans-serif;
+                cursor: pointer;
+               
+}
+#request{
+    
+    color: white;
+    background-color: #3c3d3d;
+   
+ 
+    content: "";
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 2;
+   
+}
+
+
+.heding{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    font-size: 1.9rem;
+    padding: 1rem 2rem;
+   
+}
+.fac{
+   
+    margin: 15px;
+    letter-spacing: 1px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.icon1{
+   display: flex;
+   margin-top: 5px;
+   font-size: 2.9rem;
+
+}
+
+.icon1:hover{
+
+}
+.icon1 i{
+    margin: 10px;
+}
+.fa-facebook-messenger{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+     
+    transition:transform 1s;
+}
+.fa-facebook-messenger::after{
+    content: attr(current-count);
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color:red ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(31, 30, 30);
+    font-size: 10px;
+}
+
+.fa-plus {
+    background-color: rgb(76, 76, 76);
+    border-radius: 50%;
+    padding:  1.5rem 1.5rem;
+    font-size: 2.1rem;
+    transition:transform 2s;
+}
+.fa-plus:hover{
+transform: scale(1.2);
+font-weight: bold;
+}
+.fa-magnifying-glass{
+    background-color: rgb(76, 76, 76);
+    border-radius: 50%;
+    padding: 1.5rem 1.5rem;
+    font-size: 2.1rem;
+    transition:transform 2s;
+}
+.fa-magnifying-glass:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+}
+.mess{
+    background-color: rgb(76, 76, 76);
+    border-radius: 50%;
+    padding:  1.5rem 1.5rem;
+    font-size: 2.1rem;
+    transition: transform 2s;
+}
+.mess:hover{
+    transform: scale(1.2);
+}
+
+.imgs{
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.heding2{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    font-size: 3.4rem;
+    padding: 10px 30px;
+
+}
+
+
+.fa-house{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+     
+    transition:transform 1s;
+}
+.fa-house::after{
+    content: attr(current-count);
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:red ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(42, 42, 42);
+    font-size: 10px;
+    transition:transform 3s;
+}
+
+
+.fa-house:hover{
+    color:rgb(29, 100, 255) ;
+    transform: scale(1.2);
+}
+
+
+
+.fa-user-group{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(34, 102, 248);
+     
+    transition:transform 1s;
+}
+.fa-user-group::after{
+    content: attr(current-count);
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:red ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(54, 53, 53);
+    font-size: 10px;
+    transition:transform 3s;
+}
+.fa-user-group:hover{
+    color:rgb(29, 100, 255) ;
+    transform: scale(1.2);
+}
+
+
+
+.fa-youtube{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+     
+    transition:transform 1s;
+}
+.fa-youtube::after{
+    content: attr(current-count);
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color:red ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(67, 65, 65);
+    font-size: 10px;
+    transition:transform 3s;
+}
+.fa-youtube:hover{
+    color:rgb(29, 100, 255) ;
+    transform: scale(1.2);
+}
+
+
+
+
+.fa-bell{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+     
+    transition: 1s;
+}
+.fa-bell::after{
+    content: attr(current-count);
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color:red ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(59, 59, 59);
+    font-size: 10px;
+    transition:transform 3s;
+}
+.fa-bell:hover{
+    color:rgb(29, 100, 255) ;
+    transform: scale(1.2);
+}
+hr{
+    opacity: 60%;
+}
+
+/* main start here */
+
+#friends{
+   
+    color: white;
+    background-color: #3c3d3d; 
+
+}
+.friend-list{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px ;
+    
+}
+.friend-list{
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu-bar i{
+   margin-right: 20px;
+}
+.des{
+    display: flex;
+    font-size: 1.7rem;
+   
+}
+.des h4{
+    padding: 10px;
+    margin: 10px 10px;
+    margin-left:50px ;
+    background-color: rgb(78, 89, 89);
+    border-radius: 40px;
+    transition:transform 2s;
+}
+.des h4:hover{
+    background-color: #111111;
+    border-radius: 40px;
+    opacity: 60%;
+    transform: scale(1.1);
+}
+ #friends hr{
+margin-top: 10px;
+opacity: 50%;
+}
+
+.request-list{
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   
+}
+.request-list h3{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+} 
+.request-list span{
+    color: rgb(233, 42, 42);
+}
+.chek{
+    color: rgb(71, 132, 255);
+    
+}
+.chek h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin-right: 40px;
+}
+/* main end here */
+
+/* footer start here */
+
+#footer{
+    margin-top: 2px;
+   color: white;
+   background-color: #3c3d3d;
+}
+.iems .hhh{
+    padding: 20px  30px;
+    width: 180px;
+    height: 160px;
+    border-radius: 50%;
+
+}
+.all-footer{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+    position: relative;
+}
+ .iems{
+    display: flex;
+ }
+ .name{
+    margin-top: 20px;
+ }
+ .name img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+ }
+ 
+ .dys{
+    margin-right: 160px;
+ }
+ .mutal{
+    font-size: 1.4rem;
+    margin-left: 75px;
+    margin-top: -30px;
+ }
+ .btnee{
+    margin-top: 20px;
+   
+ }
+ .see-all{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 30px;
+ }
+ .dahj{
+    transition:transform 2s;
+ }
+ .dahj:hover{
+   transform: scale(1.1);
+   
+ }
+ .dlet:hover{
+    transform: scale(1.1);
+ }
+ button{
+   
+    font-size: 1.8rem;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(24, 93, 255);
+    color: white;
+ }
+.dlet{
+    background-color: #292a2a;
+    transition: 2s;
+}
+.see-all{
+    color: white;
+    
+}
+.see-all button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    height: 30px;
+    background-color: #292a2a;
+    margin-left: 50px;
+}
+hr{
+    margin-top: 20px;
+    opacity: 30%;
+ 
+   
+}
+.spn{
+    display: flex;
+    padding: 30px;
+    font-size: 3rem;
+}
+/* footer end here */
+/* responsive start here */
+@media (max-width:992px){
+    
+        
+}
+
+@media (max-width:768px){
+
+    .heding .fac{
+        font-size: 2.5rem;
+    }
+    .heding2{
+        display: flex;
+        text-align: center;
+        justify-content:space-between;
+        font-size: 3rem;
+        padding: 10px 10px;
+    
+    }
+    .iems .hhh{
+        padding: 30px 0 ;
+        width:60px;
+        height: 120px;
+    }
+    
+     .name{
+        font-size: 2rem;
+        padding: 0 10px;
+     }   
+    
+    .mutal p{
+        font-size: 0.4rem;
+    }
+    
+    
+    .dys p{
+        font-size: 1.5rem;
+        margin-left: -40px;
+        
+       
+    }
+    .btnee{
+        display: flex;
+    }
+    button{
+       
+        font-size: 1.3rem;
+        width: 120px;
+        height: 30px;
+        margin: 5px;
+        
+    }
+    
+    hr{
+        margin-top: -5px;
+        opacity: 60%;
+    }
+.see-all button{
+    width: 350px;
+    height: 30px;
+    background-color: #292a2a;
+    margin-left: 8px;
+    
+}
+.spn{
+  
+    font-size: 2rem;
+}
+.see-all{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
+ }
+}
+
+
+@media (max-width:600px){
+    #request .heding{
+        display: flex;
+        text-align: center;
+        justify-content:space-between;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+     
+
+}
+}
+ #friends .des h4{
+     margin-right: 40px; 
+}
+.des h4{
+    
+    margin: 1px ;
+  
+    background-color: rgb(78, 89, 89);
+    border-radius: 40px;
+    transition:transform 2s;
+}
+.request-list{
+    padding: 30px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
+   
+}
+.request-list h3{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+} 
+.request-list span{
+    color: rgb(233, 42, 42);
+}
+ 
+
+
+
+@media (max-width:400px){
+
+}
+
+/* responsive end here */
